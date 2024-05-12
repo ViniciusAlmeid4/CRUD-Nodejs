@@ -8,7 +8,7 @@ var serverBuilder = new build({
 
 const server = serverBuilder.startRoutes()
 
-server.listen({ port: serverPort }, function (err, address) {
+server.listen({ port: serverPort || 8080 }, function (err, address) {
     if (err) {
         server.log.error(err)
         process.exit(1)

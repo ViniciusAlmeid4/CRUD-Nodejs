@@ -1,10 +1,11 @@
-import {} from  '../models'
+import yfinance from yfinance;
 
 function hello(req, res) {
     res.send('Hello Word!!!')
 }
-function bye(req, res) {
-    res.send('Bye Word!!!')
+function stock(req, res) {
+
+    res.send('')
 }
 
 export {

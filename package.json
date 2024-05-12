@@ -9,7 +9,8 @@
   "author": "Vinicius Almeida",
   "license": "ISC",
   "dependencies": {
-    "fastify": "^4.26.2"
+    "fastify": "^4.26.2",
+    "yfinance": "^0.0.6"
   },
   "type": "module",
   "devDependencies": {

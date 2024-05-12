@@ -1,10 +1,10 @@
-import fastify from 'fastify'
+import Fastify from 'fastify'
 
 import {Rotas} from './routes/routes.js'
 
 class build {
   constructor(opts) {
-    this.app = fastify(opts)
+    this.app = Fastify(opts)
   }
   startRoutes(){
     var rotas = new Rotas(this.app)
