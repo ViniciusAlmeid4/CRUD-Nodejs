@@ -3,10 +3,12 @@ import {build} from './app.js'
 const serverPort = process.env.serverPort
 
 var serverBuilder = new build({
-    logger: true
+    logger: false
 })
 
-const server = serverBuilder.startRoutes()
+const server = serverBuilder.createApp()
+serverBuilder.configureApp()
+serverBuilder.startRoutes()
 
 server.listen({ port: serverPort || 8080 }, function (err, address) {
     if (err) {

@@ -1,4 +1,4 @@
-import { hello, stock } from "../controllers/helloWord.js";
+import { hello } from "../controllers/Users.js";
 
 class Rotas{
     constructor (app){
@@ -6,7 +6,7 @@ class Rotas{
     }
     createRoutes() {
         this.app.get('/', hello)
-        this.app.get('/teste', stock)
+        // this.app.post('/teste', login)
     }
 }
 
